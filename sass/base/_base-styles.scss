@@ -1,0 +1,40 @@
+/* Basic inherited properties */
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.142;
+
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+
+    margin: 0;
+    padding: 0;
+  }
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

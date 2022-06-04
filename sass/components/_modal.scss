@@ -1,0 +1,61 @@
+/* Modal styles */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 40px;
+  // width: 528px;
+  // height: 581px;
+
+  background-color: var(--primary-white-color);
+  border-radius: 4px;
+
+  @media screen and (min-width:480px) {
+      width: 450px;
+      height: 609px;
+    }
+
+    @media screen and (min-width:1200px) {
+      width: 528px;
+      height: 581px;
+    }
+}
+
+.modal__title{
+  line-height: 23px;
+  text-align: center;
+
+  margin-bottom: 12px;
+  font-size: 20px;
+
+  text-align: center;
+  color:var(--title-text-color);
+}
+
+.modal__close-btn{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: none;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__close-btn:hover{
+  fill: var(--accent-color);
+  cursor: pointer;
+}
