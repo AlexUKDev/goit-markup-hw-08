@@ -17,8 +17,7 @@
       to right,
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
-    ),
-    url(../../images/hero-bg-img/Hero-img-mob-1x.jpg);
+    ),url(../../images/hero-bg-img/Hero-img-mob-1x.jpg);
 
   background-position: center;
   background-repeat: no-repeat;
@@ -31,17 +30,16 @@
       to right,
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
-    ),
-    url(../../images/hero-bg-img/Hero-img-mob-2x.jpg);
-    }
+    ),url(../../images/hero-bg-img/Hero-img-mob-2x.jpg);
+  }
     
   @media screen and (min-width:768px) {
     background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.4)
-  ),
-  url(../../images/hero-bg-img/Hero-img-tab-1x.jpg);
+    ),url(../../images/hero-bg-img/Hero-img-tab-1x.jpg);
+    
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -49,9 +47,8 @@
         to right,
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
-      ),
-      url(../../images/hero-bg-img/Hero-img-tab-2x.jpg);
-      }
+      ),url(../../images/hero-bg-img/Hero-img-tab-2x.jpg);
+    }
   }
   @media screen and (min-width:1200px){
     max-width: 1600px;
@@ -62,8 +59,7 @@
       to right,
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
-    ),
-    url(../../images/hero-bg-img/Hero-img-desktop-1x.jpg);
+    ),url(../../images/hero-bg-img/Hero-img-desktop-1x.jpg);
     
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -72,8 +68,7 @@
       to right,
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
-    ),
-    url(../../images/hero-bg-img/Hero-img-desktop-2x.jpg);
+    ),url(../../images/hero-bg-img/Hero-img-desktop-2x.jpg);
     }
   }
 }
