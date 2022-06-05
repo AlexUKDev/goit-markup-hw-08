@@ -648,6 +648,10 @@ ul {
   display: none;
 }
 
+.menu-container.is-open .mob-menu__soc {
+  display: block;
+}
+
 .mob-menu__icon {
   width: 40px;
   height: 40px;
@@ -658,9 +662,7 @@ ul {
 }
 
 .mob-menu__soc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -671,6 +673,9 @@ ul {
 }
 
 .mob-menu__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   padding: 10px;
   font-weight: 500;
   font-size: 18px;
