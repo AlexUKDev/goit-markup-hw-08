@@ -81,6 +81,26 @@
   font-size: 12px;
   // line-height: 1.71;
 
+  @media screen and (max-width:450px){
+    font-size: 7px;
+  }
+  @media screen and (min-width:344px){
+    font-size: 8px;
+  }
+  @media screen and (min-width:371px){
+    font-size: 9px;
+  }
+  @media screen and (min-width:397px){
+    font-size: 10px;
+  }
+  @media screen and (min-width:424px){
+    font-size: 11px;
+  }
+
+  @media screen and (min-width:424px){
+    font-size: 11px;
+  }
+    
     @media screen and (min-width:1200px) {
       font-size: 14px;
       line-height: 1.71;

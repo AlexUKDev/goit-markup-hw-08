@@ -16,6 +16,7 @@
   --footer-icons-bg: #44454e;
   --overlay-portfolio-bg-cards-color: rgba(33, 150, 243, 0.9);
   --backdrop-bg-color: rgba(0, 0, 0, 0.2);
+  --border-right-color:rgba(33, 33, 33, 0.2);
 }
 
 /* Basic inherited properties */
@@ -329,100 +330,6 @@ ul {
   }
 }
 
-.menu-container {
-  background-color: var(--primary-white-color);
-}
-
-.menu-container.is-open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  max-height: 100vh;
-  z-index: 1;
-}
-
-@media screen and (max-width: 767px) {
-  .menu-container {
-    display: none;
-    position: absolute;
-    padding: 48px 40px;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--primary-white-color);
-    max-width: 480px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .menu-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-.mob-menu__btn {
-  background-color: transparent;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  max-width: 40px;
-  max-height: 40px;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  border: none;
-  margin-left: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .mob-menu__btn {
-    display: none;
-  }
-}
-
-.mob-menu__btn .icon-close {
-  display: none;
-}
-
-.mob-menu__btn.is-open .icon-close {
-  display: block;
-}
-
-.mob-menu__btn.is-open .icon-open {
-  display: none;
-}
-
-.mob-menu__icon {
-  width: 40px;
-  height: 40px;
-}
-
-.mob-menu__icon:hover, .mob-menu__icon:focus {
-  fill: var(--accent-color);
-}
-
 /* Main Navigation */
 .navigation {
   display: -webkit-box;
@@ -593,6 +500,7 @@ ul {
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    margin-bottom: 32px;
   }
 }
 
@@ -653,6 +561,124 @@ ul {
     background-color: var(--accent-color);
     border-radius: 2px;
   }
+}
+
+.menu-container {
+  background-color: var(--primary-white-color);
+}
+
+.menu-container.is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-height: 100vh;
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    padding: 48px 40px;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-white-color);
+    max-width: 480px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.mob-menu__btn {
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 40px;
+  max-height: 40px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu__btn {
+    display: none;
+  }
+}
+
+.mob-menu__btn .icon-close {
+  display: none;
+}
+
+.mob-menu__btn.is-open .icon-close {
+  display: block;
+}
+
+.mob-menu__btn.is-open .icon-open {
+  display: none;
+}
+
+.mob-menu__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.mob-menu__icon:hover, .mob-menu__icon:focus {
+  fill: var(--accent-color);
+}
+
+.mob-menu__soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--accent-color);
+}
+
+.mob-menu__item {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22px;
+}
+
+.mob-menu__item:not(:last-child) {
+  border-right: 1px solid var(--border-right-color);
 }
 
 /* Hero-section styles*/
@@ -1057,7 +1083,13 @@ ul {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 450px) {
+  .modal {
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 450px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1204,6 +1236,42 @@ ul {
   font-weight: 400;
   line-height: 1.16;
   font-size: 12px;
+}
+
+@media screen and (max-width: 450px) {
+  .modal-form__label--check-text {
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: 344px) {
+  .modal-form__label--check-text {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 371px) {
+  .modal-form__label--check-text {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 397px) {
+  .modal-form__label--check-text {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 424px) {
+  .modal-form__label--check-text {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 424px) {
+  .modal-form__label--check-text {
+    font-size: 11px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
