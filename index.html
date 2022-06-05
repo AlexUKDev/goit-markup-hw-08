@@ -209,12 +209,13 @@
                 <ul class="skills">
                     <li class="skills__item">
                         <div class="skills__thumb">
-                            <img 
-                                src="./images/box1.jpg" 
-                                alt="Десктопные приложения" 
-                                width="370" 
-                                class="skills__img"
-                            >
+                            <picture>
+                                <source srcset="./images/skills-img/box1@1x.jpg 1x, ./images/skills-img/box1@2x.jpg box1@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)"/>
+
+                                <img src="./images/skills-img/box1@1x.jpg" alt="Десктопные приложения" width="370" class="skills__img">
+                            </picture>
+        
+
                             <div class="skills__product-title-bg">
                                 <h3 class="skills__product-title">Десктопные приложения</h3>
                             </div>
@@ -223,12 +224,10 @@
                     </li>
                     <li class="skills__item">
                         <div class="skills__thumb">
-                            <img 
-                                src="./images/box2.jpg" 
-                                alt="Мобильные приложения" 
-                                width="370" 
-                                class="skills__img"
-                            >
+                            <picture>
+                                <source srcset="./images/skills-img/box2@1x.jpg 1x, ./images/skills-img/box2@2x.jpg 2x," type="image/jpeg" media="(min-width: 1200px)"/>
+                                <img src="./images/skills-img/box2@1x.jpg" alt="Мобильные приложения" width="370" class="skills__img">
+                            </picture>
                             <div class="skills__product-title-bg">
                                 <h3 class="skills__product-title">Мобильные приложения</h3>
                             </div>
@@ -237,12 +236,10 @@
                     </li>
                     <li class="skills__item">
                         <div class="skills__thumb">
-                            <img 
-                                src="./images/box3.jpg" 
-                                alt="Дизайнерские решения" 
-                                width="370" 
-                                class="skills__img"
-                            >
+                            <picture>
+                                <source srcset="./images/skills-img/box3@1x.jpg 1x, ./images/skills-img/box3@2x.jpg 2x," type="image/jpeg" media="(min-width: 1200px)"/>
+                                <img src="./images/skills-img/box3@1x.jpg" alt="Дизайнерские решения" width="370" class="skills__img">
+                            </picture>
                             <div class="skills__product-title-bg">
                                 <h3 class="skills__product-title">Дизайнерские решения</h3>
                             </div>
@@ -251,8 +248,7 @@
                     </li>
                 </ul>
 
-            </div>
-               
+            </div> 
             
         </section>
 
@@ -265,11 +261,13 @@
                 
                 <ul class="team">
                     <li class="team__item">
-                        <img 
-                        src="./images/IgorDemyanenko.jpg" 
-                        alt="Фото продуктового дизайнера Игоря Демьяненко" 
-                        width="270"
-                        >
+                        <picture>
+                            <source srcset="./images/team-img/team-card1-mob@1x.jpg 1x, ./images/team-img/team-card1-mob@2x.jpg 2x" type="image/jpeg" media="(max-width: 767px)"/>
+                            <source srcset="./images/team-img/team-card1-tab@1x.jpg 1x, ./images/team-img/team-card1-tab@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)"/>
+                            <source srcset="./images/team-img/team-card1-desktop@1x.jpg 1x, ./images/team-img/team-card1-desktop@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)"/>
+                            <img src="./images/team-img/team-card1-mob@1x.jpg" alt="Фото продуктового дизайнера Игоря Демьяненко" width="270">
+                        </picture>
+                        
                         <div class="team__wrap">
                             <h3 class="team__title">
                                 Игорь Демьяненко
@@ -310,7 +308,13 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/OlgaRepina.jpg" alt="Фото фронтенд разработчика Ольги Репиной" width="270">
+                        <picture>
+                            <source srcset="./images/team-img/team-card2-mob@1x.jpg 1x, ./images/team-img/team-card2-mob@2x.jpg 2x" type="image/jpeg" media="(max-width: 767px)"/>
+                            <source srcset="./images/team-img/team-card2-tab@1x.jpg 1x, ./images/team-img/team-card2-tab@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)"/>
+                            <source srcset="./images/team-img/team-card2-desktop@1x.jpg 1x, ./images/team-img/team-card2-desktop@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)"/>
+                            <img src="./images/team-img/team-card2-mob@1x.jpg" alt="Фото фронтенд разработчика Ольги Репиной" width="270">
+                        </picture>
+                        
                         <div class="team__wrap">
                             <h3 class="team__title">
                                 Ольга Репина
@@ -352,7 +356,13 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/NikolaiTarasov.jpg" alt="Фото маркетолога Николая Тарасова" width="270">
+                        <picture>
+                            <source srcset="./images/team-img/team-card3-mob@1x.jpg 1x, ./images/team-img/team-card3-mob@2x.jpg 2x" type="image/jpeg" media="(max-width: 767px)"/>
+                            <source srcset="./images/team-img/team-card3-tab@1x.jpg 1x, ./images/team-img/team-card3-tab@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)"/>
+                            <source srcset="./images/team-img/team-card3-desktop@1x.jpg 1x, ./images/team-img/team-card3-desktop@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)"/>
+                            <img src="./images/team-img/team-card3-mob@1x.jpg" alt="Фото маркетолога Николая Тарасова" width="270">
+                        </picture>
+                        
                         <div class="team__wrap">
                             <h3 class="team__title">
                                 Николай Тарасов
@@ -393,8 +403,14 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/MikhailErmak.jpg" alt="Фото дизайнера пользовательских интерфейсов Михаила Ермакова"
-                            width="270">
+                        <picture>
+                            <source srcset="./images/team-img/team-card4-mob@1x.jpg 1x, ./images/team-img/team-card4-mob@2x.jpg 2x" type="image/jpeg" media="(max-width: 767px)"/>
+                            <source srcset="./images/team-img/team-card4-tab@1x.jpg 1x, ./images/team-img/team-card4-tab@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)"/>
+                            <source srcset="./images/team-img/team-card4-desktop@1x.jpg 1x, ./images/team-img/team-card4-desktop@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)"/>
+                            <img src="./images/team-img/team-card4-mob@1x.jpg" alt="Фото дизайнера пользовательских интерфейсов Михаила Ермакова"width="270">
+                        </picture>
+                        
+                        
                         <div class="team__wrap">
                             <h3 class="team__title">
                                 Михаил Ермаков
