@@ -504,6 +504,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 376px) {
+  .contacts-link--mob-accent {
+    font-size: 27px;
+  }
+}
+
 .navigation-menu__item {
   position: relative;
 }
@@ -690,6 +696,12 @@ ul {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22px;
+}
+
+@media screen and (max-width: 376px) {
+  .mob-menu__item {
+    font-size: 14px;
+  }
 }
 
 .mob-menu__item:not(:last-child) {
