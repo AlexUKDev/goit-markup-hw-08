@@ -991,12 +991,8 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-@media screen and (max-width: 768px) {
-  .customers {
-    margin-left: -30px;
-  }
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 
 @media screen and (min-width: 768px) {
