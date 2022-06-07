@@ -11,7 +11,7 @@
 
 .footer-form__wrap{
   text-align: center;
-  
+  width: 100%;
   // min-height: 86px;
   // min-width: 570px;
 
@@ -20,10 +20,9 @@
       margin-left: auto;
       margin-right: auto;
     }
-  @media screen and (min-width:768px) {
-      width: 100%;
-      
-      
+  
+    @media screen and (min-width:768px) and (max-width:1200px) {
+      margin-top: 60px;
     }
 
   @media screen and (min-width:1200px) {
