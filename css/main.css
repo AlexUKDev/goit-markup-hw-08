@@ -265,6 +265,13 @@ ul {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .section--nopadding-top {
   display: none;
   padding-top: 0;
@@ -272,13 +279,6 @@ ul {
 
 .section--gray-bg {
   background-color: var(--btn-bg-color);
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .section__title {

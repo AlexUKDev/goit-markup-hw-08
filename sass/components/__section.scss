@@ -1,22 +1,20 @@
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
-
+       
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
         &--nopadding-top {
-        display: none;
-        padding-top: 0;
+            display: none;
+            padding-top: 0;
         }
 
         &--gray-bg {
-        background-color: var(--btn-bg-color);
+            background-color: var(--btn-bg-color);
         }
-        
-        
 
-        @media screen and (min-width:1200px) {
-            padding-top: 94px;
-            padding-bottom: 94px;
-        }
 }
 
 .section__title {
