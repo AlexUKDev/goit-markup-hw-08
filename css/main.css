@@ -1857,4 +1857,24 @@ ul {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.container--contacts {
+  min-height: 100vh;
+}
+
+.iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.modal--contacts {
+  width: 75%;
+  height: 75%;
+}
+
+.contacts__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*# sourceMappingURL=main.css.map */
